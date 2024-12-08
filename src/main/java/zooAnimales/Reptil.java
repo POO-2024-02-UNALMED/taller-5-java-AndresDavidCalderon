@@ -15,10 +15,12 @@ public class Reptil extends Animal {
 		super(nombre, edad, habitat, genero);
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
+		listado.add(this);
 	}
 	
 	public Reptil() {
-		
+
+		listado.add(this);
 	}
 	
 	static public int cantidadReptiles() {
