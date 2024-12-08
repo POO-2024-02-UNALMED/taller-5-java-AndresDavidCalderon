@@ -37,4 +37,11 @@ public class Zoologico {
     public String getNombre() {
     	return this.nombre;
     }
+    public String getUbicacion() {
+    	return this.ubicacion ;
+    }
+    
+    public ArrayList<Zona> getZonas(){
+    	return this.zonas;
+    }
 }

@@ -5,8 +5,8 @@ import gestion.Zona;
 
 public class Reptil extends Animal {
 	static private ArrayList<Reptil> listado;
-	public int iguanas;
-	public int serpientes;
+	static public int iguanas;
+	static public int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	
@@ -38,12 +38,14 @@ public class Reptil extends Animal {
 		return "reptar";
 	}
 	
-	public void crearIguana() {
-		
+	static public Reptil crearIguana(String nombre, int edad, String genero) {
+		Reptil.iguanas+=1;
+		return new Reptil(nombre, edad, "humedal", genero, "verde", 3);
 	}
 	
-	public void crearSerpientes() {
-		
+	static public Reptil crearSerpiente(String nombre, int edad, String genero) {
+		Reptil.serpientes+=1;
+		return new Reptil(nombre, edad, "jungla", genero, "blanco",1);
 	}
     static ArrayList<Reptil> getListado(){
     	return listado;

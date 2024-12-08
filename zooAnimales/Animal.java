@@ -34,7 +34,7 @@ public class Animal {
     	return "desplazarse";
     }
     
-    public String totalPorTipo() {
+    static public String totalPorTipo() {
     	return "Mamiferos: "+ Mamifero.getListado().size() + "\n"+
     			"Aves: "+ Ave.getListado().size() + "\n"+
     			"Reptiles: " + Reptil.getListado().size() + "\n"+
@@ -47,5 +47,46 @@ public class Animal {
     		presentacion+=", la zona en la que me ubico es "+this.zona.getNombre()+", en el "+this.zona.getZoo().getNombre();
     	}
     	return presentacion;
+    }
+    
+    public String getNombre() {
+    	return this.nombre ;
+    }
+    
+    public int getEdad() {
+    	return this.edad;
+    }
+    
+    public String getHabitat() {
+    	return this.habitat;
+    }
+    
+    public String getGenero() {
+    	return this.genero;
+    }
+    
+    public Zona getZona() {
+    	return this.zona;
+    }
+    
+    
+    public void setNombre(String nombre) {
+    	this.nombre = nombre;
+    }
+    
+    public void setEdad(int edad) {
+    	this.edad = edad;
+    }
+    
+    public void setHabitat(String habitat) {
+    	this.habitat = habitat;
+    }
+    
+    public void setGenero(String genero) {
+    	this.genero = genero;
+    }
+    
+    public void setZona(Zona zona) {
+    	this.zona = zona;
     }
 }
