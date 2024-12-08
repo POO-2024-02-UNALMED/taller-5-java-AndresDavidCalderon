@@ -12,4 +12,33 @@ public class Zona {
     	this.zoo = zoo;
     	this.animales = animales;
     }
+    
+    public Zona(String nombre, Zoologico zoo) {
+    	this.nombre = nombre;
+    	this.zoo = zoo;
+    }
+    
+    public Zona() {
+    	
+    }
+    
+    public ArrayList<Animal> getAnimales(){
+    	return this.animales;
+    }
+    
+    public void agregarAnimales(Animal animal) {
+    	animales.add(animal);
+    }
+    
+    public int cantidadAnimales() {
+    	return this.animales.size();
+    }
+    
+    public Zoologico getZoo() {
+    	return this.zoo;
+    }
+    
+    public String getNombre() {
+    	return this.nombre;
+    }
 }
