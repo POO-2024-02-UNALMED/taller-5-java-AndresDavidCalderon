@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import gestion.Zona;
 
 public class Anfibio extends Animal {
-	static private ArrayList<Anfibio> listado;
-	static public int ranas;
-	static public int salamandras;
+	static private ArrayList<Anfibio> listado = new ArrayList<Anfibio>();
+	static public int ranas = 0;
+	static public int salamandras = 0;
 	private String colorPiel;
 	private boolean venenoso;
 	

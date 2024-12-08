@@ -2,6 +2,7 @@ package gestion;
 import java.util.ArrayList;
 import zooAnimales.Animal;
 
+
 public class Zona {
     private String nombre;
     private Zoologico zoo;
@@ -40,5 +41,13 @@ public class Zona {
     
     public String getNombre() {
     	return this.nombre;
+    }
+    
+    public void setZoo(Zoologico zoo) {
+    	this.zoo = zoo;
+    }
+    
+    public void setNombre(String nombre) {
+    	this.nombre = nombre;
     }
 }

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import gestion.Zona;
 
 public class Ave extends Animal {
-    static private ArrayList<Ave> listado;
-    public static int halcones;
-    public static int aguilas;
+    static private ArrayList<Ave> listado = new ArrayList<Ave>();
+    public static int halcones = 0;
+    public static int aguilas = 0;
     private String colorPlumas;
     
     
