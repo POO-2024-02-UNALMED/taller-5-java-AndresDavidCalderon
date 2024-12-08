@@ -5,8 +5,8 @@ import gestion.Zona;
 
 public class Ave extends Animal {
     static private ArrayList<Ave> listado;
-    static int halcones;
-    static int aguilas;
+    public static int halcones;
+    public static int aguilas;
     private String colorPlumas;
     
     Ave(int totalAnimales, String nombre, int edad, String habitat, String genero, Zona zona, int halcones, int aguilas, String colorPlumas){
@@ -47,10 +47,10 @@ public class Ave extends Animal {
     	return listado;
     }
     
-    private String getColorPlumas() {
+    public String getColorPlumas() {
     	return this.colorPlumas ;
     }
-    private void setColorPlumas(String color) {
+    public void setColorPlumas(String color) {
     	this.colorPlumas = color;
     }
     

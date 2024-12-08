@@ -50,4 +50,19 @@ public class Reptil extends Animal {
     static ArrayList<Reptil> getListado(){
     	return listado;
     }
+    
+    public String getColorEscamas() {
+    	return this.colorEscamas ;
+    }
+    
+    public int getLargoCola() {
+    	return this.largoCola ;
+    }
+    
+    public void setColorEscamas(String color) {
+    	this.colorEscamas =color;
+    }
+    public void setLargoCola(int largo) {
+    	this.largoCola = largo;
+    }
 }
